@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NLCCA – Applications</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="brand-badge"><span>NLCCA</span></div><span>NLCCA</span></div>
+      <nav><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="applications.html" class="active">Applications</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></nav>
+      <a class="cta" href="#job-application">Apply</a>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section">
+      <h2>Applications</h2>
+      <p class="lead">Complete the appropriate form. We’ll reply within 2 working days.</p>
+
+      <div class="grid forms-grid">
+        <!-- Job Application -->
+        <form id="job-application" class="card" aria-labelledby="job-apply-title" method="post" action="#">
+          <h3 id="job-apply-title">Job Application</h3>
+          <p class="help">Fields marked * are required.</p>
+          <div class="field">
+            <label for="role">Role *</label>
+            <select id="role" name="role" required>
+              <option value="">Select a role…</option>
+              <option>Care Assistant</option>
+              <option>Admin Assistant</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label for="name">Full name *</label><input id="name" name="name" autocomplete="name" required /></div>
+          <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
+          <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required /></div>
+          <div class="field"><label for="eligibility">Eligibility to work in UK *</label><select id="eligibility" name="eligibility" required><option value="">Select…</option><option>Yes</option><option>No</option></select></div>
+          <div class="field"><label for="dbs">DBS status *</label><select id="dbs" name="dbs" required><option value="">Select…</option><option>Up‑to‑date DBS</option><option>Need new DBS</option></select></div>
+          <div class="field"><label for="experience">Experience (brief) *</label><textarea id="experience" name="experience" required></textarea></div>
+          <div class="field"><label for="availability">Availability *</label><input id="availability" name="availability" placeholder="e.g., weekdays 9–3, weekends" required /></div>
+          <div class="field"><label for="cv">Link to CV (URL)</label><input id="cv" name="cv" type="url" placeholder="https://…" /></div>
+          <div class="field"><label><input type="checkbox" required name="consent" /> I agree to the processing of my data for recruitment purposes. *</label></div>
+          <button class="cta" type="submit">Send application</button>
+        </form>
+
+        <!-- Risk Assessment Request -->
+        <form id="risk-form" class="card" method="post" action="#" aria-labelledby="risk-title">
+          <h3 id="risk-title">Free Risk Assessment</h3>
+          <div class="field"><label for="r-name">Your name *</label><input id="r-name" name="name" required /></div>
+          <div class="field"><label for="r-email">Email *</label><input id="r-email" name="email" type="email" required /></div>
+          <div class="field"><label for="r-postcode">Postcode *</label><input id="r-postcode" name="postcode" required /></div>
+          <div class="field"><label for="r-notes">Notes</label><textarea id="r-notes" name="notes" placeholder="Tell us about needs, times and risks."></textarea></div>
+          <button class="cta" type="submit">Request assessment</button>
+        </form>
+
+        <!-- General Meeting -->
+        <form id="meeting-form" class="card" method="post" action="#" aria-labelledby="meeting-title">
+          <h3 id="meeting-title">General Meeting</h3>
+          <div class="field"><label for="m-name">Your name *</label><input id="m-name" name="name" required /></div>
+          <div class="field"><label for="m-email">Email *</label><input id="m-email" name="email" type="email" required /></div>
+          <div class="field"><label for="m-topic">Topic *</label><input id="m-topic" name="topic" placeholder="What would you like to discuss?" required /></div>
+          <div class="field"><label for="m-prefer">Preferred time</label><input id="m-prefer" name="preferred_time" placeholder="e.g., Tue mornings" /></div>
+          <button class="cta" type="submit">Book meeting</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container"><small>© <span id="y"></span> North London Community Care Agency</small></div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    <script src="animations.js"></script>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NLCCA – Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="brand-badge"><span>NLCCA</span></div><span>NLCCA</span></div>
+      <nav><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="applications.html">Applications</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul></nav>
+      <a class="cta" href="applications.html">Book</a>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section">
+      <h2>Contact</h2>
+      <div class="grid contact-cards">
+        <div class="card">
+          <h3>Call</h3>
+          <p class="lead">+44 (0)20 0000 0000</p>
+          <p class="help">Mon–Fri, 9:00–17:00</p>
+        </div>
+        <div class="card">
+          <h3>Email</h3>
+          <p class="lead"><a href="mailto:info@example.org">info@example.org</a></p>
+          <p class="help">General enquiries and referrals</p>
+        </div>
+        <div class="card">
+          <h3>Address</h3>
+          <p>Community House, 123 High Street<br/>London, E1 1AA</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px">
+        <h3>Quick message</h3>
+        <form method="post" action="#" aria-label="Contact form">
+          <div class="grid forms-grid">
+            <div class="field"><label for="c-name">Name *</label><input id="c-name" name="name" required /></div>
+            <div class="field"><label for="c-email">Email *</label><input id="c-email" name="email" type="email" required /></div>
+            <div class="field"><label for="c-message">Message *</label><textarea id="c-message" name="message" required></textarea></div>
+          </div>
+          <p class="help">By sending this form you consent to us contacting you about your enquiry.</p>
+          <button class="cta" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container"><small>© <span id="y"></span> North London Community Care Agency</small></div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    <script src="animations.js"></script>
+  </footer>
+</body>
+</html>
