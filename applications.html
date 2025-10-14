@@ -10,7 +10,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header>
     <div class="container nav">
-      <div class="brand"><img src="images/nlcca-logo.png" alt="NLCCA - North London Community Care Agency" style="height: 40px; width: auto;" /></div>
+      <div class="brand"><img src="images/nlcca-logo.svg" alt="NLCCA - North London Community Care Agency" class="brand-logo" /></div>
       <nav><ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -23,56 +23,211 @@
     </div>
   </header>
 
-  <main id="main" class="container">
-    <section class="section">
-      <h2>Applications</h2>
-      <p class="lead">Complete the appropriate form. We’ll reply within 2 working days.</p>
+  <main id="main">
+    <!-- ===================== Hero Section ===================== -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/8f57ee_4dbc3aa7c1654f429db14a415319ddd0~mv2.avif') center/cover; color: white; text-align: center; padding: 4rem 0;">
+      <div class="container">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Join Our Team</h1>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">
+          Start your career with NLCCA. We're looking for compassionate, dedicated individuals to join our growing team across North London.
+        </p>
+      </div>
+    </section>
 
-      <div class="grid forms-grid">
-        <!-- Job Application -->
-        <form id="job-application" class="card" aria-labelledby="job-apply-title" method="post" action="#">
-          <h3 id="job-apply-title">Job Application</h3>
-          <p class="help">Fields marked * are required.</p>
-          <div class="field">
-            <label for="role">Role *</label>
-            <select id="role" name="role" required>
-              <option value="">Select a role…</option>
-              <option>Care Assistant</option>
-              <option>Admin Assistant</option>
-              <option>Other</option>
-            </select>
+    <!-- ===================== Application Benefits ===================== -->
+    <section class="section" style="background: #f8fafc; padding: 3rem 0;">
+      <div class="container">
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Why Apply to NLCCA?</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+          <div style="text-align: center;">
+            <div style="background: #22c55e; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">✓</div>
+            <h3 style="color: #22c55e; margin-bottom: 0.5rem;">Competitive Pay</h3>
+            <p>Best rates in the sector with monthly payments</p>
           </div>
-          <div class="field"><label for="name">Full name *</label><input id="name" name="name" autocomplete="name" required /></div>
-          <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
-          <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required /></div>
-          <div class="field"><label for="eligibility">Eligibility to work in UK *</label><select id="eligibility" name="eligibility" required><option value="">Select…</option><option>Yes</option><option>No</option></select></div>
-          <div class="field"><label for="dbs">DBS status *</label><select id="dbs" name="dbs" required><option value="">Select…</option><option>Up‑to‑date DBS</option><option>Need new DBS</option></select></div>
-          <div class="field"><label for="experience">Experience (brief) *</label><textarea id="experience" name="experience" required></textarea></div>
-          <div class="field"><label for="availability">Availability *</label><input id="availability" name="availability" placeholder="e.g., weekdays 9–3, weekends" required /></div>
-          <div class="field"><label for="cv">Link to CV (URL)</label><input id="cv" name="cv" type="url" placeholder="https://…" /></div>
-          <div class="field"><label><input type="checkbox" required name="consent" /> I agree to the processing of my data for recruitment purposes. *</label></div>
-          <button class="cta" type="submit">Send application</button>
-        </form>
+          <div style="text-align: center;">
+            <div style="background: #22c55e; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">📚</div>
+            <h3 style="color: #22c55e; margin-bottom: 0.5rem;">Full Training</h3>
+            <p>Comprehensive training and ongoing development</p>
+          </div>
+          <div style="text-align: center;">
+            <div style="background: #22c55e; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">🕐</div>
+            <h3 style="color: #22c55e; margin-bottom: 0.5rem;">Flexible Hours</h3>
+            <p>Work schedules that fit your lifestyle</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Risk Assessment Request -->
-        <form id="risk-form" class="card" method="post" action="#" aria-labelledby="risk-title">
-          <h3 id="risk-title">Free Risk Assessment</h3>
-          <div class="field"><label for="r-name">Your name *</label><input id="r-name" name="name" required /></div>
-          <div class="field"><label for="r-email">Email *</label><input id="r-email" name="email" type="email" required /></div>
-          <div class="field"><label for="r-postcode">Postcode *</label><input id="r-postcode" name="postcode" required /></div>
-          <div class="field"><label for="r-notes">Notes</label><textarea id="r-notes" name="notes" placeholder="Tell us about needs, times and risks."></textarea></div>
-          <button class="cta" type="submit">Request assessment</button>
-        </form>
+    <!-- ===================== Application Form ===================== -->
+    <section class="section">
+      <div class="container">
+        <div style="max-width: 800px; margin: 0 auto;">
+          <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">Application Form</h2>
+          <p style="text-align: center; margin-bottom: 3rem; color: #666;">Fill out the form below and we'll get back to you within 48 hours.</p>
 
-        <!-- General Meeting -->
-        <form id="meeting-form" class="card" method="post" action="#" aria-labelledby="meeting-title">
-          <h3 id="meeting-title">General Meeting</h3>
-          <div class="field"><label for="m-name">Your name *</label><input id="m-name" name="name" required /></div>
-          <div class="field"><label for="m-email">Email *</label><input id="m-email" name="email" type="email" required /></div>
-          <div class="field"><label for="m-topic">Topic *</label><input id="m-topic" name="topic" placeholder="What would you like to discuss?" required /></div>
-          <div class="field"><label for="m-prefer">Preferred time</label><input id="m-prefer" name="preferred_time" placeholder="e.g., Tue mornings" /></div>
-          <button class="cta" type="submit">Book meeting</button>
-        </form>
+          <form id="job-application" class="card" style="padding: 3rem; box-shadow: 0 8px 16px rgba(0,0,0,0.1);" method="post" action="#">
+            <div style="margin-bottom: 3rem;">
+              <h3 style="color: #22c55e; margin-bottom: 1.5rem; border-bottom: 2px solid #22c55e; padding-bottom: 0.5rem;">Personal Information</h3>
+              
+              <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="field">
+                  <label for="first-name" style="font-weight: 600; color: #374151;">First Name *</label>
+                  <input id="first-name" name="first_name" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" required />
+                </div>
+                <div class="field">
+                  <label for="last-name" style="font-weight: 600; color: #374151;">Last Name *</label>
+                  <input id="last-name" name="last_name" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" required />
+                </div>
+              </div>
+
+              <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="field">
+                  <label for="email" style="font-weight: 600; color: #374151;">Email Address *</label>
+                  <input id="email" name="email" type="email" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" required />
+                </div>
+                <div class="field">
+                  <label for="phone" style="font-weight: 600; color: #374151;">Phone Number *</label>
+                  <input id="phone" name="phone" type="tel" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" required />
+                </div>
+              </div>
+
+              <div class="field" style="margin-bottom: 1.5rem;">
+                <label for="address" style="font-weight: 600; color: #374151;">Full Address *</label>
+                <textarea id="address" name="address" rows="3" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem; resize: vertical;" placeholder="Please include postcode" required></textarea>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 3rem;">
+              <h3 style="color: #22c55e; margin-bottom: 1.5rem; border-bottom: 2px solid #22c55e; padding-bottom: 0.5rem;">Position & Availability</h3>
+              
+              <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="field">
+                  <label for="role" style="font-weight: 600; color: #374151;">Position Applying For *</label>
+                  <select id="role" name="role" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" required>
+                    <option value="">Select a position...</option>
+                    <option>Care Assistant</option>
+                    <option>Senior Care Worker</option>
+                    <option>Night Care Worker</option>
+                    <option>Administrative Support</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="work-type" style="font-weight: 600; color: #374151;">Preferred Work Type *</label>
+                  <select id="work-type" name="work_type" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" required>
+                    <option value="">Select type...</option>
+                    <option>Full-time</option>
+                    <option>Part-time</option>
+                    <option>Zero hours contract</option>
+                    <option>Bank work</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field" style="margin-bottom: 1.5rem;">
+                <label for="availability" style="font-weight: 600; color: #374151;">Availability *</label>
+                <textarea id="availability" name="availability" rows="2" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" placeholder="e.g., Monday-Friday 9am-5pm, weekends available" required></textarea>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 3rem;">
+              <h3 style="color: #22c55e; margin-bottom: 1.5rem; border-bottom: 2px solid #22c55e; padding-bottom: 0.5rem;">Qualifications & Experience</h3>
+              
+              <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="field">
+                  <label for="eligibility" style="font-weight: 600; color: #374151;">Right to Work in UK *</label>
+                  <select id="eligibility" name="eligibility" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" required>
+                    <option value="">Select...</option>
+                    <option>Yes - British Citizen</option>
+                    <option>Yes - EU/EEA Citizen</option>
+                    <option>Yes - Valid Visa</option>
+                    <option>No</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="dbs" style="font-weight: 600; color: #374151;">DBS Check Status *</label>
+                  <select id="dbs" name="dbs" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" required>
+                    <option value="">Select...</option>
+                    <option>Current Enhanced DBS</option>
+                    <option>DBS needs updating</option>
+                    <option>No DBS (we can arrange)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field" style="margin-bottom: 1.5rem;">
+                <label for="qualifications" style="font-weight: 600; color: #374151;">Relevant Qualifications</label>
+                <textarea id="qualifications" name="qualifications" rows="3" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" placeholder="e.g., NVQ Level 2/3 Health & Social Care, First Aid, etc."></textarea>
+              </div>
+
+              <div class="field" style="margin-bottom: 1.5rem;">
+                <label for="experience" style="font-weight: 600; color: #374151;">Care Experience *</label>
+                <textarea id="experience" name="experience" rows="4" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" placeholder="Please describe your experience in care work, even if informal (e.g., caring for family members)" required></textarea>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 3rem;">
+              <h3 style="color: #22c55e; margin-bottom: 1.5rem; border-bottom: 2px solid #22c55e; padding-bottom: 0.5rem;">Additional Information</h3>
+              
+              <div class="field" style="margin-bottom: 1.5rem;">
+                <label for="transport" style="font-weight: 600; color: #374151;">Reliable Transport *</label>
+                <select id="transport" name="transport" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" required>
+                  <option value="">Select...</option>
+                  <option>Own car with insurance</option>
+                  <option>Public transport</option>
+                  <option>Bicycle</option>
+                  <option>Walking distance only</option>
+                </select>
+              </div>
+
+              <div class="field" style="margin-bottom: 1.5rem;">
+                <label for="languages" style="font-weight: 600; color: #374151;">Languages Spoken</label>
+                <input id="languages" name="languages" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" placeholder="e.g., English, Somali, Arabic, Turkish" />
+              </div>
+
+              <div class="field" style="margin-bottom: 2rem;">
+                <label for="motivation" style="font-weight: 600; color: #374151;">Why do you want to work in care? *</label>
+                <textarea id="motivation" name="motivation" rows="4" style="border: 2px solid #e5e7eb; padding: 0.75rem; border-radius: 6px; font-size: 1rem;" placeholder="Tell us what motivates you to work in the care sector" required></textarea>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f3f4f6; border-radius: 8px;">
+              <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer;">
+                <input type="checkbox" required name="consent" style="margin-top: 0.25rem;" />
+                <span style="font-size: 0.9rem; line-height: 1.5;">
+                  I agree to the processing of my personal data for recruitment purposes and confirm that all information provided is accurate. I understand that NLCCA will contact me regarding my application. *
+                </span>
+              </label>
+            </div>
+
+            <div style="text-align: center;">
+              <button class="cta" type="submit" style="font-size: 1.1rem; padding: 1rem 3rem; background: #22c55e; border: none; color: white; border-radius: 6px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 8px rgba(34, 197, 94, 0.3);">
+                Submit Application
+              </button>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
+                We'll review your application and get back to you within 48 hours.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Contact Section ===================== -->
+    <section class="section" style="background: #1f2937; color: white; margin-top: 3rem; padding: 3rem 0;">
+      <div class="container">
+        <div style="text-align: center;">
+          <h3 style="color: #22c55e; margin-bottom: 1rem;">Need Help with Your Application?</h3>
+          <p style="margin-bottom: 2rem;">Our recruitment team is here to help</p>
+          <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+            <div>
+              <strong>Call:</strong> <a href="tel:02036090807" style="color: white;">020 3609 0807</a>
+            </div>
+            <div>
+              <strong>Email:</strong> <a href="mailto:info@nlcca.co.uk" style="color: white;">info@nlcca.co.uk</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
