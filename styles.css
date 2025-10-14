@@ -109,7 +109,13 @@ img{max-width:100%;display:block}
 .fade-in-up[data-delay="800"] { animation-delay: 0.8s; }
 
 
-.container{max-width:var(--max);margin-inline:auto;padding:0 20px}
+.container{max-width:var(--max);margin-inline:auto;padding:0 1.5rem}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
 .stack{display:grid;gap:14px}
 .grid{display:grid;gap:18px}
 
@@ -416,8 +422,14 @@ Cards & Panels with animations
 .services{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 
 /* Jobs */
-.jobs{grid-template-columns:1fr}
-.job{display:grid;gap:10px}
+.jobs{grid-template-columns:1fr; gap: 1.5rem;}
+.job{display:grid;gap:10px; margin-bottom: 1rem;}
+
+@media (max-width: 768px) {
+  .jobs {
+    gap: 1rem;
+  }
+}
 .job .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted)}
 
 .pill{
@@ -527,6 +539,57 @@ form{
 .section {
   padding: 3rem 0;
   animation: fadeIn 0.8s var(--ease-out);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 0;
+  }
+}
+
+/* Ensure main content has proper spacing */
+main {
+  padding: 0 0 2rem 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 0 1rem 0;
+  }
+}
+
+/* Better spacing for page headers */
+.page-header {
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 1.5rem 0;
+  }
+}
+
+/* Improve grid spacing on mobile */
+.grid {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    gap: 1rem !important;
+  }
+}
+
+/* Better form spacing */
+.forms-grid {
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .forms-grid {
+    gap: 1rem;
+  }
 }
 
 .section h2 {
