@@ -158,6 +158,13 @@ header{
   align-items:center;
   justify-content:space-between;
   gap:16px;
+}
+
+/* Logo styling */
+.brand-logo {
+  height: 40px;
+  width: auto;
+  max-width: 200px;
   padding:14px 0;
 }
 

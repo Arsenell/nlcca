@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="120" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Purple curved elements -->
+  <path d="M60 20 Q80 10 100 20 L95 30 Q80 20 65 30 Z" fill="#8B5CF6"/>
+  <path d="M60 100 Q80 110 100 100 L95 90 Q80 100 65 90 Z" fill="#8B5CF6"/>
+  
+  <!-- Green oval in center -->
+  <ellipse cx="80" cy="60" rx="15" ry="25" fill="#22C55E"/>
+  
+  <!-- Main text -->
+  <text x="120" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#22C55E">NORTH</text>
+  <text x="120" y="55" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#22C55E">LONDON</text>
+  
+  <text x="210" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#22C55E">COMMUNITY</text>
+  <text x="210" y="55" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#22C55E">CARE</text>
+  
+  <text x="120" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#22C55E">AGENCY</text>
+</svg>
