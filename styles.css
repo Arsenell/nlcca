@@ -1,7 +1,7 @@
 :root{
 /* Brand palette */
---primary:#0463FA;
---light:#EFF5FF;
+--primary:#63247D;
+--light:#F3E8FF;
 --dark:#1B2C51;
 
 --bs-primary: var(--primary);
@@ -14,8 +14,8 @@
 --panel:#ffffff; /* card background on white */
 --muted:#5b6b87; /* secondary text on light */
 --brand:var(--primary);
---brand-2:#3a8bff;
---ok:#2ecc71;
+--brand-2:#8B4FA8;
+--ok:#3F8219;
 --warn:#ffdd57;
 --danger:#ff6b6b;
 --ring: color-mix(in oklab, var(--primary) 28%, transparent);
@@ -250,8 +250,8 @@ nav a.active {
   display:inline-flex;
   align-items:center;
   gap:10px;
-  background:linear-gradient(135deg,var(--brand),var(--brand-2));
-  color:#001316;
+  background:#3F8219;
+  color:#ffffff;
   font-weight:700;
   padding:14px 24px;
   border-radius:12px;
