@@ -279,6 +279,7 @@ nav a.active {
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
   text-decoration: none;
+  color: #ffffff;
 }
 
 .cta:hover::before {
@@ -427,7 +428,7 @@ Cards & Panels with animations
 .quick-actions .card:nth-child(4) { animation-delay: 0.4s; animation-fill-mode: both; }
 
 /* Services */
-.services{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.services{grid-template-columns:repeat(3, 1fr); gap: 2rem;}
 
 /* Jobs */
 .jobs{grid-template-columns:1fr; gap: 1.5rem;}
